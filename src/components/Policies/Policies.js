@@ -4,9 +4,8 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 const PoliciesPage = () => (
-  <body>
-    <Navigation />
-    <Header />
+<>
+
     <h1>Class Policies</h1>
     <h2>
       <span>SOUS CHEF PROGRAM</span>
@@ -55,10 +54,9 @@ const PoliciesPage = () => (
       Longer class times are available, and prices for longer classes will be
       discussed at the time you book your party.
     </p>
-    <span> WEATHER POLICY</span>
+    <h1> WEATHER POLICY</h1>
    <p> In case of inclement weather, please call us at (609) 206-4511 about your
     class.</p>
-    <Footer />
-  </body>
+  </>
 );
 export default PoliciesPage;

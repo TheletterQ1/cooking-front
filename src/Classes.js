@@ -26,11 +26,12 @@ You can book a Private One on One class with the Chef! The price is $375 for a 1
 <span>Please note our Covid-19 and Cancellation policies at the bottom of the page.
 </span>
 <p>Our Gift Certificates are a top-rated gift for the Holidays, Birthdays,  and Bridal Registries! Available in the studio, and also by phone. We’ll send them right to your email address! 
-
+<br/>
 Gift Certificate Hotline: 609~206~4511
-</p>
-About Our Calendar
-Classes are arranged by Month, and by Day of the Week within each Month, so you will see the Wednesday classes together, all the Saturday classes together, etc.
+</p><br/>
+
+<h3>About Our Calendar</h3>
+<p>Classes are arranged by Month, and by Day of the Week within each Month, so you will see the Wednesday classes together, all the Saturday classes together, etc.</p>
 
 
 </>

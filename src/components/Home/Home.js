@@ -1,8 +1,6 @@
 import React from "react";
 import {withRouter} from 'react-router-dom'
 
-import Navigation from '../Nav'
-
 const Home = (props) => {
 
 
@@ -10,8 +8,6 @@ const Home = (props) => {
          <>
           <h1>Home</h1>
           <div className="App">
-        <Navigation />
-        <Header />
         <section>
           <h1 id="all_about_the_food">It's All About the Food!</h1>
           <br />
@@ -46,8 +42,6 @@ const Home = (props) => {
             Spanish and Mexican, to Vietnamese, Thai, Greek and more.
             <br />
             Learn more about our <a href="#">Cooking Classes</a> and{" "}
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-           {/*}  eslint-disable-next-line jsx-a11y/anchor-is-valid  */}
             <a href="#">Team Building events!</a>
             <br />
             If there is something you want to learn that is not already on our
@@ -58,12 +52,9 @@ const Home = (props) => {
           <br />
           <h3>Get ready to spice up your life!</h3>
         </section>
-      
-        
-       
       </div>
     </>
-         
+
     );
 }
 export default withRouter(Home);

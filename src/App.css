@@ -1,6 +1,115 @@
 /* 
 //////  NAV
 */
+
+
+.App {
+  text-align: center;
+  background-color: #590E0D;
+}
+
+small {
+  opacity: 0;
+}
+
+body {
+   color: #111111;
+   background: white;
+   display: block;
+   padding: 10px;
+}
+
+p{
+  color: white;
+  font-size: 25px;
+  font-family: 'Dancing Script', cursive;
+}
+header {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  width: fit-content;
+  color: white;
+  background-color: #590E0D;
+}
+a {
+  color: white;
+}
+h1,h2,h3 {
+  color: white;
+  text-decoration: underline;
+  margin-bottom: -15px;
+}
+
+
+#kitchen-goal{
+  color: white;
+  font-size: 25px;
+  font-family: 'Dancing Script', cursive;
+}
+
+#logo {
+  /* display: flex; */
+  /* max-width: 100; */
+  /* background-image: url('https://inthekitchencookingschool.com/wp-content/uploads/itkck-header2.jpg"'); */
+  /* height: 50%; */
+  width: 100%;
+  background-color: #590E0D;
+
+}
+#cake {
+  max-width: 100%;
+  max-height: 100%;
+  background-position: center;
+  background-image: url('https://inthekitchencookingschool.com/wp-content/uploads/cake.jpg');
+  background-size:cover;
+  background-position: relative;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  border-color: #590E0D;
+  border-radius: 10px;
+  
+}
+#cake-text {
+  color: white;
+  font-size: large;
+  background-color: black;
+  background: linear-gradient(to-top, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+}
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #590E0D;
+  height: fit-content;
+  /* min-height: 50vh; */
+  margin-top: 20px;
+  /* display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  object-fit: cover;
+}
+
 header {
   text-align: center;
 }
@@ -16,7 +125,7 @@ header nav div {
   font-size: larger;
   background-color: maroon;
   color: white;
-  width: 200px;
+  width: cover;
   border-radius: 7px;
   transition: background-color .2s, color .2s;
   padding: 10px;

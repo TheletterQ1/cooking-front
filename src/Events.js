@@ -10,3 +10,4 @@ const PrivateEvents =()=> {
 <p>All the guests will enjoy delicious food, and take home recipes for all the dishes prepared. Private classes are offered in the day or evening.</p>
     </>
 }
+export default PrivateEvents
