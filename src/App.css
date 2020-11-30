@@ -1,38 +1,54 @@
-.App {
+/* 
+//////  NAV
+*/
+header {
+  text-align: center;
+}
+header nav{
+  display: flex;
+  justify-content: space-around;
+}
+header nav a{
+  color: white;
+  text-decoration: none;
+}
+header nav div {
+  font-size: larger;
+  background-color: maroon;
+  color: white;
+  width: 200px;
+  border-radius: 7px;
+  transition: background-color .2s, color .2s;
+  padding: 10px;
+}
+
+header nav div:hover {
+  background-color: burlywood;
+  color: maroon;
+}
+
+.auth form { 
+  padding: 50px;
+}
+.auth form input, .form form input, button {
+  background-color: maroon;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.2em;
+  
+}
+
+.dashboard {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard .note {
+  text-align: center;
+  width: 90%;
+  margin: 10px auto;
+  border: 3px solid crimson;
 }

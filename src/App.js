@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect, useContext, createContext } from "react";
+import { Switch, Route } from "react-router-dom";
+import Home from "./components/Home.js";
+import Auth from "./components/Auth.js";
+import Dashboard from "./components/Dashboard.js";
+import Nav from "./components/Nav.js";
+import { useAppState } from "./AppState.js";
+import "./App.css";
 
-function App() {
+export const App = (props) => {
+  const { state, dispatch } = useAppState();
+
+  useState(() => {
+    const auth = JSON.parse(window.localStorage.getItem("auth"));
+    if (auth) {
+      dispatch({ type: "auth", payload: auth });
+        props.history.push("/dashboard");
+    } else {
+     props.history.push("/");
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {" "}
+      <Route path="/" component={Nav}/>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/auth/:form" component={Auth} />
+        <Route path="/dashboard" component={Dashboard} />
+      </Switch>
+      <h1></h1>
+    </>
   );
-}
-
-export default App;
+};
