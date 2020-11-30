@@ -9,30 +9,30 @@ const Navigation = (props) => {
   const { state, dispatch } = useAppState();
 
   return(
-//    <header>
-//     <h1 className="title">Chefd Up Cooking App</h1>
-//     <nav>
-//       {!state.token ? (
-//         <>
-//       <Link to="/"><div>Home</div></Link>
-//       <Link to="/auth/signup"><div>Sign Up</div></Link>
-//       <Link to="/auth/login"><div>Login</div></Link>
-//       <Link to="/about"><div>About</div></Link>
-//       <Link to="/policies"><div>Policies</div></Link>
-//       </>
-//       ) : null}
-// {state.token ? (
-//   <div onClick={() => {
-//     dispatch({type: "logout" });
-//     props.history.push("/");
-//   }}
-//   >
-//     Logout
-//   </div>
-// ) : null}
-//     </nav>
-//   </header>
-<header>
+   <header>
+    <h1 className="title">You Got Me Chef'd Up</h1>
+    <nav>
+      {!state.token ? (
+        <>
+      <Link to="/"><div>Home</div></Link>
+      <Link to="/auth/signup"><div>Sign Up</div></Link>
+      <Link to="/auth/login"><div>Login</div></Link>
+      <Link to="/about"><div>About</div></Link>
+      <Link to="/policies"><div>Policies</div></Link>
+      </>
+      ) : null}
+{state.token ? (
+  <div onClick={() => {
+    dispatch({type: "logout" });
+    props.history.push("/");
+  }}
+  >
+    Logout
+  </div>
+) : null}
+    </nav>
+  </header>
+/* <header>
     <Navbar collapseOnSelect expand="md" bg="maroon" variant="">
       <Navbar.Brand href="#home">In the Kitchen</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav">
@@ -85,23 +85,23 @@ Haddonfield, NJ 08033
             <NavDropdown.Divider />
             <NavDropdown.Item href="#action/3.4">
               Separated link
-            </NavDropdown.Item> */}
-          </NavDropdown>
-          </>
-        ): null}
-        {state.token ? (
-  <div onClick={() => {
-    dispatch({type: "logout" });
-    props.history.push("/");
-  }}
-  >
-    Logout
-  </div>
-        ) : null}
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
-    </header>
+            </NavDropdown.Item> */
+  //         </NavDropdown>
+  //         </>
+  //       ): null}
+  //       {state.token ? (
+  // <div onClick={() => {
+  //   dispatch({type: "logout" });
+  //   props.history.push("/");
+  // }}
+  // >
+  //   Logout
+  // </div>
+  //       ) : null}
+  //       </Nav>
+  //     </Navbar.Collapse>
+  //   </Navbar>
+  //   </header> 
   
   )
 };

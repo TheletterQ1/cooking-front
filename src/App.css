@@ -11,6 +11,13 @@
 small {
   opacity: 0;
 }
+small:hover {
+  opacity: none;
+}
+#all_about_the_food {
+
+}
+
 
 body {
    color: #111111;
@@ -27,8 +34,9 @@ p{
 header {
   display: flex;
   width: fit-content;
+  max-width: 100%;
   justify-content: center;
-  width: fit-content;
+  padding: 10px;
   color: white;
   background-color: #590E0D;
 }
@@ -38,7 +46,8 @@ a {
 h1,h2,h3 {
   color: white;
   text-decoration: underline;
-  margin-bottom: -15px;
+  /* margin-bottom: -15px; */
+  margin-start:
 }
 
 
@@ -97,9 +106,9 @@ h1,h2,h3 {
 
 .App-header {
   background-color: #590E0D;
-  height: fit-content;
+  height: 100%;
   /* min-height: 50vh; */
-  margin-top: 20px;
+  /* margin-top: 20px; */
   /* display: flex;
   width: fit-content;
   flex-direction: column;
@@ -107,7 +116,7 @@ h1,h2,h3 {
   justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 header {

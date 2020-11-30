@@ -1,6 +1,10 @@
 .title {
   text-decoration: none;
 }
+header {
+  height: 100px;
+  
+}
 header nav {
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +13,7 @@ header nav {
 
   header nav div {
   font-size: larger;
-  background-color: crimson;
+  background-color: burlywood;
   color: white;
   width: cover;
   border-radius: 7px;
@@ -24,75 +28,4 @@ header nav div:hover {
 /* .auth form { 
     padding: 50px;
   } */
-  a.nav-links {
-    color: white;
-    /* font-size: 15px;
-    text-decoration: underline; */
-    text-decoration-color:whitesmoke;
-    /* opacity: 0; */
-}
- 
-a.navbar-brand{
-    color: white;
-    /* font-size: 25px;
-    text-decoration: underline; */
-}
-    .Links{
-    color: white;
-            font-size: 25px;
-            text-decoration: underline;
-            text-decoration-color:whitesmoke;
-            /* opacity: 0; */
-  } 
-
-  button {
-      font-size: 30px;
-      color: white;
-      background-color: #590E0D;
-      border: none;
-  }
   
-.dropdown-toggle {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
-    font-size: 25px;
-    
-}
-  
-  div.mr-auto.navbar-nav {
-    font-size: 15px;
-    color: white;
-    border-style: dashed;
-    width: 100%;
-    align-self: center;
-    align-content: space-around;
-
-
-}
-
-div.dropdown-menu.show {
-background-color: #590E0D;
-align-self: left;
-}
-
-a.dropdown-item {
-    color: #590E0D;
-    background-color: antiquewhite;
-    font-size: 15px;
-    padding: 0px;
-    overflow: hidden;
-    max-width: 100%;
-    
-}
-
-  .auth form input, .form form input, button {
-    background-color: maroon;
-    color: white;
-    padding: 8px;
-    border-radius: 5px;
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-    font-size: 1.2em;
-    
-  }

@@ -3,7 +3,7 @@ import {withRouter} from 'react-router-dom'
 
 const Home = (props) => {
 
-
+// toggleClick = document.getElementById
     return(
          <>
           <h1>Home</h1>
