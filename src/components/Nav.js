@@ -15,6 +15,8 @@ const Nav = (props) => {
       <Link to="/"><div>Home</div></Link>
       <Link to="/auth/signup"><div>Sign Up</div></Link>
       <Link to="/auth/login"><div>Login</div></Link>
+      <Link to="/about"><div>About</div></Link>
+      <Link to="/policies"><div>Policies</div></Link>
       </>
       ) : null}
 {state.token ? (

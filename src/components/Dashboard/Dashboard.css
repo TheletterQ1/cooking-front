@@ -1,0 +1,10 @@
+.dashboard {
+    text-align: center;
+  }
+  
+  .dashboard .note {
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+    border: 3px solid crimson;
+  }

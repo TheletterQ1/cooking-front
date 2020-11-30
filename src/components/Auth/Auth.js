@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useAppState } from "../AppState.js";
+import { useAppState } from "../../AppState.js";
 
 const Auth = (props) => {
   const type = props.match.params.form;

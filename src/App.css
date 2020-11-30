@@ -27,6 +27,10 @@ header nav div:hover {
   color: maroon;
 }
 
+.App {
+  text-align: center;
+  background-color: #590E0D;
+}
 .auth form { 
   padding: 50px;
 }

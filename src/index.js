@@ -5,7 +5,6 @@ import './index.css';
 import { App } from './App.js';
 import reportWebVitals from './reportWebVitals';
 import { AppState } from './AppState.js';
-import AppointmentPicker from 'appointment-picker';
 // import * as serviceWorker from "./serviceWorker";
 
 

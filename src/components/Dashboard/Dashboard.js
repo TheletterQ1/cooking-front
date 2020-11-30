@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
-import { useAppState } from "../AppState.js";
+import { useAppState } from "../../AppState.js";
 import { Route, Link, withRouter } from "react-router-dom";
-import Form from "../components/Form.js";
-import Schedule from './Calender'
+import Form from "../Form.js";
+import Schedule from '../Calender'
 
 const Dashboard = (props) => {
   const { state, dispatch } = useAppState();

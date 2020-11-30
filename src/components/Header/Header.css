@@ -1,0 +1,8 @@
+header {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    max-width: 100%;
+    color: white;
+    background-color: #590E0D;
+  }
