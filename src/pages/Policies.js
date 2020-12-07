@@ -1,7 +1,4 @@
 import React from "react";
-import Navigation from "../Navigation/Nav";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 
 const PoliciesPage = () => (
 <>

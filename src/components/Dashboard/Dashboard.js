@@ -7,7 +7,7 @@ import Schedule from '../Calender'
 const Dashboard = (props) => {
   const { state, dispatch } = useAppState();
   const { token, url, events, username } = state;
-  // note
+  // event
 
   const getEvents = async () => {
     const response = await fetch(url + "/events/", {

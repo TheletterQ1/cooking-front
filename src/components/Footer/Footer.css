@@ -1,4 +1,16 @@
-
+/*  footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px
+} 
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer p {
+  display: inline;
+}
 .marketing-site-footer {
     background: #2c3840;
     color: #8aa0ae;
@@ -50,6 +62,7 @@
   .marketing-site-footer-block p {
     margin-left: 1rem;
     line-height: 1.125rem;
+   
   }
   
   .marketing-site-footer-bottom {
@@ -86,4 +99,133 @@
     }
   }
   
+   */
+    /* .sticky-footer-css {
+   height: 100vh; 
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+  }
   
+  /* .sticky-footer-css-body {
+    overflow: auto;
+  } 
+   ul li {
+   display: inline;
+    margin: 15px ;
+    padding: 15px;
+  }
+  .sticky-footer-css .footer {
+    height: 2rem;
+    background-color: #2c3840;
+    color: white;
+    padding: 3rem;
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+  }
+  
+  .sticky-footer-css .footer .menu a {
+    color: yellow;
+    font-size: 25px;
+    display: inline;
+  }
+  
+
+.contact-panel-button {
+  background: #0a0a0a;
+  color: #fefefe;
+  width: auto;
+  padding: 0.25rem 1.25rem;
+  text-align: center;
+  position: absolute;
+  top: -30px;
+  right: 20px;
+  transition: background 0.25s ease-in-out;
+}
+
+.contact-panel-button:after {
+  content: "⥣";
+  margin-left: 5px;
+}
+
+.contact-panel-button:hover {
+  background: #242424;
+  color: #f0f0f0;
+}
+
+.is-active .contact-panel-button:after {
+  content: "⥥";
+}
+
+.contact-panel {
+  padding: 1rem;
+  z-index: 1;
+  background: #0a0a0a;
+  width: 350px;
+  height: 375px;
+  position: fixed;
+  bottom: -375px;
+  right: 20px;
+  transition: bottom 0.5s ease-in-out;
+}
+
+.contact-panel label {
+  color: #fefefe;
+  width: 100%;
+}
+
+.contact-panel input[type="text"],
+.contact-panel input[type="email"],
+.contact-panel textarea {
+  background: #303030;
+  border: #0a0a0a;
+  transition: background 0.3s ease-in-out;
+}
+
+.contact-panel input[type="text"]:focus,
+.contact-panel input[type="email"]:focus,
+.contact-panel textarea:focus {
+  background: #fefefe;
+}
+
+.contact-panel .contact-panel-actions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-panel .submit-button {
+  margin-bottom: 0;
+}
+
+.contact-panel .cancel-button {
+  margin-bottom: 0;
+  padding: 0.75rem 1rem;
+  color: #fefefe;
+  transition: background 0.25s ease-in-out;
+}
+
+.contact-panel .cancel-button:hover {
+  background: #242424;
+  color: #f0f0f0;
+}
+
+.contact-panel.is-active {
+  bottom: 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .contact-panel {
+    width: 100%;
+    right: 0;
+  }
+}
+ */

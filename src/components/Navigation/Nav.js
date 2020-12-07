@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React,{useState,useEffect,useContext} from "react";
 import { Link, withRouter } from 'react-router-dom'
 import { useAppState } from "../../AppState.js"
@@ -19,6 +20,9 @@ const Navigation = (props) => {
       <Link to="/auth/login"><div>Login</div></Link>
       <Link to="/about"><div>About</div></Link>
       <Link to="/policies"><div>Policies</div></Link>
+      <Link to="/classes"><div>Classes</div></Link>
+      <Link to="/team_building"><div>Team Building</div></Link>
+      <Link to="/auth/users/events"><div>Private Courses</div></Link>
       </>
       ) : null}
 {state.token ? (

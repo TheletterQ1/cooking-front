@@ -2,20 +2,20 @@
   text-decoration: none;
 }
 header {
-  height: 100px;
+  height: 80px;
   
 }
 header nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  width: cover;
+  justify-content: space-around;
 }
 
   header nav div {
   font-size: larger;
-  background-color: burlywood;
+  justify-self: center;
   color: white;
-  width: cover;
   border-radius: 7px;
   transition: background-color .2s, color .2s;
   /* padding: 10px; */
@@ -28,4 +28,16 @@ header nav div:hover {
 /* .auth form { 
     padding: 50px;
   } */
-  
+  @media (max-width: 600px) {
+    h1 {
+      text-align: center;
+      font-size: xx-large;
+    }
+    header nav div {
+      opacity: 0;
+    }
+    header nav div:hover {
+      opacity: 1;
+    }
+  }
+

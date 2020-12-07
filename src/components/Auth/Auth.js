@@ -26,7 +26,7 @@ const Auth = (props) => {
       props.history.push("/dashboard");
     } else {
     }
-  }, [userData]);
+  }, [dispatch, props.history, userData]);
 
   const actions = {
     signup: () => {

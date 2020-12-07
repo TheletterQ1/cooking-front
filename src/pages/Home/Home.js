@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import {withRouter} from 'react-router-dom'
 
@@ -6,7 +7,7 @@ const Home = (props) => {
 // toggleClick = document.getElementById
     return(
          <>
-          <h1>Home</h1>
+         
           <div className="App">
         <section>
           <h1 id="all_about_the_food">It's All About the Food!</h1>
@@ -41,8 +42,8 @@ const Home = (props) => {
             of delicious and unique cuisines. Try it all, from French, Italian,
             Spanish and Mexican, to Vietnamese, Thai, Greek and more.
             <br />
-            Learn more about our <a href="#">Cooking Classes</a> and{" "}
-            <a href="#">Team Building events!</a>
+            Learn more about our <a href="/classes">Cooking Classes</a> and{" "}
+            <a href="/team_building">Team Building events!</a>
             <br />
             If there is something you want to learn that is not already on our
             menu, In the Kitchen Cooking School will create a class especially

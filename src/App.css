@@ -7,16 +7,14 @@
   text-align: center;
   background-color: #590E0D;
 }
-
+/* 
 small {
   opacity: 0;
 }
 small:hover {
   opacity: none;
 }
-#all_about_the_food {
 
-}
 
 
 body {
@@ -26,29 +24,32 @@ body {
    padding: 10px;
 }
 
-p{
+*/p{
   color: white;
   font-size: 25px;
   font-family: 'Dancing Script', cursive;
 }
+
+a {
+  color: #E0C388;
+}
+/*
 header {
   display: flex;
   width: fit-content;
   max-width: 100%;
   justify-content: center;
-  padding: 10px;
-  color: white;
+  /* padding: 10px; 
+   color: white;
   background-color: #590E0D;
 }
-a {
-  color: white;
-}
+
 h1,h2,h3 {
   color: white;
   text-decoration: underline;
-  /* margin-bottom: -15px; */
-  margin-start:
-}
+
+ 
+} */
 
 
 #kitchen-goal{
@@ -58,12 +59,10 @@ h1,h2,h3 {
 }
 
 #logo {
-  /* display: flex; */
-  /* max-width: 100; */
-  /* background-image: url('https://inthekitchencookingschool.com/wp-content/uploads/itkck-header2.jpg"'); */
-  /* height: 50%; */
+  top: 20px;
   width: 100%;
   background-color: #590E0D;
+  position: relative;
 
 }
 #cake {
@@ -77,8 +76,8 @@ h1,h2,h3 {
   height: 300px;
   width: 100%;
   text-align: center;
-  border-color: #590E0D;
   border-radius: 10px;
+  border-color: #F2E5D2;
   
 }
 #cake-text {
@@ -98,34 +97,32 @@ h1,h2,h3 {
   opacity: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #590E0D;
   height: 100%;
-  /* min-height: 50vh; */
-  /* margin-top: 20px; */
-  /* display: flex;
-  width: fit-content;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
-  /* object-fit: cover; */
+}
+h1.title {
+  background-color: #F2E5D2;
+  margin: 0px;
+  padding: 10px;
 }
 
+nav {
+  background-color: #F2E5D2;
+  margin-bottom: 10px;
+}
 header {
   text-align: center;
 }
 header nav{
   display: flex;
   justify-content: space-around;
+  width: 100vh;
 }
+
 header nav a{
   color: white;
   text-decoration: none;
@@ -134,7 +131,6 @@ header nav div {
   font-size: larger;
   background-color: maroon;
   color: white;
-  width: cover;
   border-radius: 7px;
   transition: background-color .2s, color .2s;
   padding: 10px;
@@ -144,11 +140,19 @@ header nav div:hover {
   background-color: burlywood;
   color: maroon;
 }
-
-.App {
-  text-align: center;
-  background-color: #590E0D;
+h1#all_about_the_food {
+font-size: 30px;
+margin: 0;
+color: white;
+text-decoration: underline;
+padding-top: 10px;
 }
+
+/* .App {
+  text-align: center;
+  background-color: maroon;
+  color: grey;
+} */
 .auth form { 
   padding: 50px;
 }
@@ -168,9 +172,67 @@ header nav div:hover {
   text-align: center;
 }
 
-.dashboard .note {
+.dashboard .event {
   text-align: center;
   width: 90%;
   margin: 10px auto;
-  border: 3px solid crimson;
+  border: 3px solid maroon;
+} 
+footer {
+  display: flex;
+  background-color: gray;
+ 
+}
+.social-icon-button {
+  border-radius: 3.6rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  background: none;
+}
+.social-icon-button + .social-icon-button {
+  margin-left: 0.25rem;
+}
+.social-icon-button .fa {
+  background: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  line-height: 3.6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon-button span {
+  display: block;
+  border-radius: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon-button:hover .fa {
+  color: #fefefe;
+}
+
+.social-icon-button:hover span {
+  display: block;
+  border-radius: 3.6rem;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+.marketing-site-footer-bottom {
+  display: flex;
 }

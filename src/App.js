@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect, useContext, createContext } from "react";
 import { Switch, Route } from "react-router-dom";
-import Home from "./components/Home/Home.js";
+import Home from "./pages/Home/Home.js";
 import Auth from "./components/Auth/Auth.js";
 import Dashboard from "./components/Dashboard/Dashboard.js";
 import Nav from "./components/Navigation/Nav.js";
@@ -8,9 +9,11 @@ import { useAppState } from "./AppState.js";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import AboutPage from "./components/About/About";
-import PoliciesPage from "./components/Policies/Policies"
-import PrivateEvents from "./Events"
+import AboutPage from "./pages/About";
+import PoliciesPage from "./pages/Policies"
+import PrivateEvents from "./pages/Events"
+import Classes from "./pages/Classes"
+import TeamBuilding from "./pages/TeamBuilding"
 
 export const App = (props) => {
   const { state, dispatch } = useAppState();
@@ -39,6 +42,8 @@ export const App = (props) => {
         <Route path="/about" component={AboutPage} />
         <Route path="/policies" component={PoliciesPage} />
         <Route path="/private_events" component={PrivateEvents} />
+        <Route path="/classes" component={Classes} />
+        <Route path="/team_building" component={TeamBuilding} />
       </Switch>
       <Footer />
       </>
