@@ -10,9 +10,11 @@ const Auth = (props) => {
   });
 
   const [userData, setUserData] = useState(null);
+  
+  // state;
   const { state, dispatch } = useAppState();
   console.log(state);
-  // state;
+
 
   useEffect(() => {
     if (userData) {
@@ -89,7 +91,7 @@ const Auth = (props) => {
           value={formData.password}
           onChange={handleChange}
         />
-        <input type="submit" value={type} />
+        <input type="submit" value={type}  />
       </form>
     </div>
   );

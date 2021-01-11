@@ -15,7 +15,7 @@ small:hover {
   opacity: none;
 }
 
-
+*/
 
 body {
    color: #111111;
@@ -24,10 +24,11 @@ body {
    padding: 10px;
 }
 
-*/p{
+
+p{
   color: white;
   font-size: 25px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script';
 }
 
 a {
@@ -43,23 +44,31 @@ header {
    color: white;
   background-color: #590E0D;
 }
-
-h1,h2,h3 {
-  color: white;
+*/
+h2,h3 {
+  color: #E0AF6B;
   text-decoration: underline;
+  margin: 5px;
+} 
+li {
+  text-decoration: underline;
+  font-size: 20px;
+}
 
- 
-} */
-
+span {
+  color: lightgray;
+  font-size: 25px;
+  text-decoration: underline;
+}
 
 #kitchen-goal{
   color: white;
   font-size: 25px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', bold;
 }
 
 #logo {
-  top: 20px;
+  top: 40px;
   width: 100%;
   background-color: #590E0D;
   position: relative;
@@ -88,6 +97,7 @@ h1,h2,h3 {
   background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
   padding: 10px;
   line-height: 28px;
+  margin-top: 5px;
 }
 .show-description p {
   height: 150px;
@@ -104,11 +114,12 @@ h1,h2,h3 {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-h1.title {
+/* h1.title {
   background-color: #F2E5D2;
   margin: 0px;
   padding: 10px;
-}
+ 
+} */
 
 nav {
   background-color: #F2E5D2;
@@ -120,11 +131,12 @@ header {
 header nav{
   display: flex;
   justify-content: space-around;
-  width: 100vh;
+  width: cover;
 }
 
 header nav a{
   color: white;
+  
   text-decoration: none;
 }
 header nav div {
@@ -140,19 +152,29 @@ header nav div:hover {
   background-color: burlywood;
   color: maroon;
 }
-h1#all_about_the_food {
+h3 {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+h2 {
+  color: white;
+  margin-top: 25px;
+  font-size: 25px;
+  text-decoration: underline;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+h1 {
 font-size: 30px;
-margin: 0;
+margin-top: 30px;
 color: white;
 text-decoration: underline;
+margin-bottom: 0px;
 padding-top: 10px;
 }
 
-/* .App {
-  text-align: center;
-  background-color: maroon;
-  color: grey;
-} */
 .auth form { 
   padding: 50px;
 }
@@ -180,10 +202,13 @@ padding-top: 10px;
 } 
 footer {
   display: flex;
+  color: pink;
   background-color: gray;
+  height: 60px;
+  max-height: 100%;
  
 }
-.social-icon-button {
+/* .social-icon-button {
   border-radius: 3.6rem;
   width: 3.6rem;
   height: 3.6rem;
@@ -235,4 +260,4 @@ footer {
 }
 .marketing-site-footer-bottom {
   display: flex;
-}
+} */

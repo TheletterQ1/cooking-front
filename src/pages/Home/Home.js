@@ -1,10 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import {withRouter} from 'react-router-dom'
+import {withRouter, Link} from 'react-router-dom'
+import '../../App.css'
 
-const Home = (props) => {
 
-// toggleClick = document.getElementById
+const Home = () => {
+
     return(
          <>
          
@@ -42,8 +43,8 @@ const Home = (props) => {
             of delicious and unique cuisines. Try it all, from French, Italian,
             Spanish and Mexican, to Vietnamese, Thai, Greek and more.
             <br />
-            Learn more about our <a href="/classes">Cooking Classes</a> and{" "}
-            <a href="/team_building">Team Building events!</a>
+            Learn more about our <Link to="/classes">Cooking Classes</Link> and{" "}
+            <Link to="/team_building">Team Building events!</Link>
             <br />
             If there is something you want to learn that is not already on our
             menu, In the Kitchen Cooking School will create a class especially

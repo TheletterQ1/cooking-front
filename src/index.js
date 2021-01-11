@@ -5,8 +5,7 @@ import './index.css';
 import { App } from './App.js';
 import reportWebVitals from './reportWebVitals';
 import { AppState } from './AppState.js';
-
-// import * as serviceWorker from "./serviceWorker";
+ import * as serviceWorker from "./serviceWorker";
 
 
 ReactDOM.render(
@@ -25,4 +24,4 @@ ReactDOM.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals(console.log);
 
-// serviceWorker.unregister();
+serviceWorker.unregister();

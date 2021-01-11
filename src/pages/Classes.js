@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../App.css'
 
 const Classes =()=> (
     <div className='classes'>

@@ -3,11 +3,15 @@ import { useAppState } from "../../AppState.js";
 import { Route, Link, withRouter } from "react-router-dom";
 import Form from "../Form.js";
 import Schedule from '../Calender'
+import UserDash from './UserDash'
 
-const Dashboard = (props) => {
+export default function Dashboard (props) {
   const { state, dispatch } = useAppState();
   const { token, url, events, username } = state;
+  
   // event
+
+
 
   const getEvents = async () => {
     const response = await fetch(url + "/events/", {
@@ -16,16 +20,17 @@ const Dashboard = (props) => {
         Authorization: "bearer " + token,
       },
     });
-    const fetchedEvents = await response.json();
+    const fetchedEvents = await response.JSON.stringify();
     dispatch({ type: "getEvents", payload: fetchedEvents });
   };
 
-  useEffect(() => {
-    getEvents();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+ 
+  // useEffect(() => {
 
-  const loaded = () => {
+
+  // }, []);
+
+  const loadedDash = () => {
     return (
       <div className="dashboard">
         <h1>{username}'s Events</h1>
@@ -70,8 +75,8 @@ const Dashboard = (props) => {
       </div>
     );
   };
-  return events ? loaded() : <h1>Loading...</h1>;
+  return  events ? loadedDash() : <h1>Loading...</h1>;
   
 };
 
-export default withRouter(Dashboard);
+// export default withRouter(Dashboard);

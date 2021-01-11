@@ -29,24 +29,36 @@ export const App = (props) => {
   }, []);
 
   return (
-    <>
+    <div className="App">
       {" "}
-      
-      
+
       <Route path="/" component={Nav}/>
       <Header />
+     
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" >
+          <Home />
+          </Route>
         <Route path="/auth/:form" component={Auth} />
         <Route path="/dashboard" component={Dashboard} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/policies" component={PoliciesPage} />
-        <Route path="/private_events" component={PrivateEvents} />
-        <Route path="/classes" component={Classes} />
-        <Route path="/team_building" component={TeamBuilding} />
+        <Route path="/about" >
+          <AboutPage />
+          </Route>
+        <Route path="/policies">
+        <PoliciesPage />
+          </Route>
+        <Route path="/private_events">
+        <PrivateEvents />
+          </Route>
+        <Route path="/classes" >
+        <Classes/>
+          </Route>
+        <Route path="/team_building" >
+        <TeamBuilding />
+          </Route>
       </Switch>
       <Footer />
-      </>
+      </div>
    
   );
 };

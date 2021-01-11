@@ -1,9 +1,10 @@
 import React from 'react'
+import '../App.css'
 
-const TeamBuilding =()=> (
-    <div>
+const TeamBuilding = () => (
+
+    <>
    <h1> Team Building</h1>
-
 <p>Have you ever noticed how everyone always ends up in the kitchen at a party? At In the Kitchen Cooking School we use this gathering place as a tool to break down barriers and teach valuable skills through the common bond of food appreciation and cooking. Whether you decide upon an informal meeting or an “Iron Chef” competition, sharing time in the kitchen is a proven way to get the inspiration flowing and the interaction growing! And what better way to finish than by sharing a meal at the end of the day when the team has worked toward a common goal?</p>
 <br/>
 <p>Our school is the perfect place to bring your employees for an adventure that will enhance the positive dynamic of your organization and re-energize your corporate family. Meetings can be dull, but cooking is an excellent way to focus your group on working together and discovering their hidden talents. When people walk through our door, all titles lose their importance — what matters is what they bring to the table!</p>
@@ -24,9 +25,9 @@ const TeamBuilding =()=> (
 <br/>
 <h2>HOW TO GET STARTED</h2>
 <ol>
-<li>1) Choose your date</li>
-<li>2) Choose your format</li>
-<li>3) Choose your cuisine</li>
+<li>1. Choose your date</li>
+<li>2. Choose your format</li>
+<li>3. Choose your cuisine</li>
 </ol>
 
 <h2>PROGRAMS</h2>
@@ -42,13 +43,14 @@ const TeamBuilding =()=> (
 <p>Please call (856) 489-1682 for a description!</p>
 
 <h3>OUR HAPPY CLIENTS INCLUDE:</h3>
-<ul>Campbell Soup Company
-<li>Hewlett-Packard</li>
-<li>American Express</li>
-<li>Sciele</li>
-<li>Welcome Mortgage Company</li>
-<li>Computer Business Systems</li>
+<ul>
+<li className='clients'>Campbell Soup Company</li>
+<li className='clients'>Hewlett-Packard</li>
+<li className='clients'>American Express</li>
+<li className='clients'>Sciele</li>
+<li className='clients'>Welcome Mortgage Company</li>
+<li className='clients'>Computer Business Systems</li>
 </ul>
-</div>
+</>
 );
 export default TeamBuilding;
